@@ -1,10 +1,60 @@
-body {
-    display: flex;
+:root {
 }
 
-.left_side {
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
     height: 100vh;
     width: 100vw;
-    background: url(/images/background.jpg) no-repeat;
-    background-size: contain;
+}
+
+button,
+label,
+input {
+    font-family: inherit;
+    display: block;
+}
+
+.right_side {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text, 
+.sign-up, 
+.footer-text {
+    flex: 1;
+    margin: 5px 0px;
+    padding: 5px 10px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up {
+    box-shadow: 1px 2px 5px;
+    
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_side {   
+    background: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vh auto;
+    background-position: center;
+    min-width: 30vw;
 }
