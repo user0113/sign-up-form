@@ -1,4 +1,15 @@
 :root {
+    --green-colour: #90d8b4;
+    --blue-colour: #8caef1;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(../images/Roboto-Regular.ttf);
+}
+
+@media only screen and (max-width: 900px) {
+    .left_side {display: none;}
 }
 
 *{
@@ -6,13 +17,29 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: sans-serif;
 }
 
 body {
     display: flex;
     height: 100vh;
     width: 100vw;
+    font-family: Norse, Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+.logo {
+    display: flex;
+    margin-top: 200px;
+    padding-top: 60px;
+    max-height: 20vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: white;
+}
+
+.logo img {
+    max-height: 80vh;
 }
 
 button,
@@ -20,12 +47,42 @@ label,
 input {
     font-family: inherit;
     display: block;
+    height: 25px;
+}
+
+label,
+input {
+    margin-top: 6px;
+    width: 150px;
+}
+
+input,
+button {
+    border-radius: 6px;
+}
+
+input {
+    border: 1px solid gainsboro;
+    padding: 5px;
+}
+
+button {
+    margin: 20px 0px 10px 0px;
+    padding: 20px;
+    padding-top: 8px;
+    padding-bottom: 27px;
+    background-color: darkslategray;
+    color: white;
+    border: 0px;
+    outline: none;
+    font-size: 16px;
 }
 
 .right_side {
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    background-color: darkslategray;
+    color: white;
 }
 
 .header-text, 
@@ -33,17 +90,36 @@ input {
 .footer-text {
     flex: 1;
     margin: 5px 0px;
-    padding: 5px 10px;
+    padding: 15px 30px;
 }
 
 .header-text {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.intro {
+    display: block;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.header-text span{
+    padding-bottom: 23px;
 }
 
 .sign-up {
-    box-shadow: 1px 2px 5px;
-    
+    background-color: var(--green-colour);
+    box-shadow: 1px 1px 5px;
+}
+
+.sign-up legend{
+    font-size: 25px;
+    margin-bottom: 15px;;
 }
 
 .inputs {
@@ -51,10 +127,20 @@ input {
     justify-content: space-between;
 }
 
+.block1,
+.block2 {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.filler {
+    flex: 2;
+}
+
 .left_side {   
     background: url(/images/background.jpg);
     background-repeat: no-repeat;
     background-size: 100vh auto;
     background-position: center;
-    min-width: 30vw;
+    min-width: 40vw;
 }

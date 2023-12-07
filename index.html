@@ -9,15 +9,28 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <div class="left_side">Skyservice</div>
+    <div class="left_side">
+      <div class="logo">
+        <img src="./images/Skyservices-logos_white.png" alt="Odin Logo">
+      </div>
+    </div>
     <div class="right_side">
-      <div class="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto autem soluta voluptates eveniet cupiditate tenetur beatae voluptatibus eos omnis adipisci alias saepe neque nostrum, deserunt, fuga temporibus dolor quasi mollitia.</div>
+      <div class="header-text">
+        <div class="intro">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            autem soluta voluptates eveniet cupiditate tenetur beatae voluptatibus
+            eos omnis adipisci alias saepe neque nostrum.
+          </div>
+          <div><br>Deserunt, fuga temporibus dolor quasi mollitia.</div>
+        </div>
+      </div>
       <div class="sign-up">
         <form action="submit">
           <fieldset>
             <legend>Join Today!</legend>
             <div class="inputs">
-              <div>
+              <div class="block1">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name">
                 <label for="email">Email</label>
@@ -25,7 +38,7 @@
                 <label for="user_password">Password</label>
                 <input type="password" id="user_password">
               </div>
-              <div>
+              <div class="block2">
                 <label for="last_name">Last Name</label>
                 <input type="text" id="last_name">
                 <label for="phone">Phone Number</label>
@@ -33,13 +46,13 @@
                 <label for="confirm_pass">Confirm Password</label>
                 <input type="password" id="confirm_pass">
               </div>
-              <div</div>
+              <div class="filler"></div>
             </div>
+            <button type="submit">Create Account</button>
           </fieldset>
         </form>
       </div>
       <div class="footer-text">
-        <button type="submit">Create Account</button>
         <span>Already have an account? </span><a href="url">Log in</a>
       </div>
     </div>
